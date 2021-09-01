@@ -1,0 +1,160 @@
+@import url(/variables.css);
+
+* {
+  box-sizing: boder-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+  background: var(--linear);
+  height: 250px;
+  color: var(--white);
+  font-size: 24px;
+}
+
+header nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  margin-bottom: 100px;
+}
+
+header nav a {
+  cursor: pointer;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div input {
+  width: 70%;
+  height: 60px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding-left: 45px;
+}
+
+header div input::placeholder {
+  font-size: 15px;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+header img {
+  height: 25px;
+  position: absolute;
+  left: 14%;
+  padding: 8px;
+}
+
+body {
+  background: #f3f5f7;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+main section {
+  width: 70%;
+}
+
+main article {
+  padding: 10px;
+  margin-bottom: 45px;
+  background: var(--white);
+}
+
+.articleTop {
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 12px;
+}
+
+main p {
+  color: var(--text);
+  padding: 10px;
+  font-size: 16px;
+}
+
+main h3 {
+  color: var(--title);
+  padding: 10px;
+}
+
+.heart {
+  background-color: var(--text);
+  height: 10px;
+  transform: rotate(-45deg);
+  width: 10px;
+  position: relative;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  background-color: var(--text);
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.heart:before {
+  top: -5px;
+}
+
+.heart:after {
+  left: 5px;
+}
+
+.heart.active {
+  background-color: red;
+  height: 12px;
+  transform: rotate(-45deg);
+  width: 12px;
+  position: relative;
+}
+
+.heart.active:before,
+.heart.active:after {
+  content: '';
+  background-color: red;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart.active:before {
+  top: -6px;
+}
+
+.heart.active:after {
+  left: 6px;
+}
+
+.imgSearch {
+  background-image: url(/desafio1/src/img/search.svg);
+  width: 50px;
+}
+
+@media (max-width: 700px) {
+  header img {
+    left: 10%;
+  }
+}
