@@ -1,160 +1,146 @@
 @import url(/variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap');
 
 * {
   box-sizing: boder-box;
   padding: 0;
   margin: 0;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.padding1 {
+  padding: 1rem;
+}
+
+.margin {
+  margin: 0.5rem;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.items-column {
+  flex-direction: column;
+}
+
+.items-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
 }
 
 header {
   background: var(--linear);
-  height: 250px;
-  color: var(--white);
-  font-size: 24px;
-}
-
-header nav {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 35px;
-  margin-bottom: 100px;
-}
-
-header nav a {
-  cursor: pointer;
-}
-
-header div {
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header div input {
-  width: 70%;
-  height: 60px;
-  border: none;
-  outline: none;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  padding-left: 45px;
-}
-
-header div input::placeholder {
-  font-size: 15px;
+input {
+  flex: 10;
+  background: transparent;
   color: var(--white);
+  border: none;
+  font-size: 18px;
+  outline: none;
+  padding-right: 1rem;
+}
+
+input::placeholder {
+  font-size: 1rem;
   opacity: 0.5;
+  color: white;
 }
 
-header img {
-  height: 25px;
-  position: absolute;
-  left: 14%;
-  padding: 8px;
+.containerNav {
+  margin-bottom: 3rem;
 }
 
-body {
-  background: #f3f5f7;
+.container.main {
+  margin-top: 3rem;
+}
+
+.searchSvg {
+  padding: 0.5rem;
 }
 
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  background-color: #f1f1f1;
 }
 
-main section {
-  width: 70%;
+article {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
 }
 
-main article {
-  padding: 10px;
-  margin-bottom: 45px;
-  background: var(--white);
+span {
+  padding-bottom: 1rem;
 }
 
-.articleTop {
+p {
   color: var(--text);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  font-size: 12px;
 }
 
-main p {
-  color: var(--text);
-  padding: 10px;
-  font-size: 16px;
+h2 {
+  color: var(--white);
 }
 
-main h3 {
+h3 {
   color: var(--title);
-  padding: 10px;
 }
 
-.heart {
-  background-color: var(--text);
-  height: 10px;
-  transform: rotate(-45deg);
-  width: 10px;
-  position: relative;
+.container-search {
+  display: flex;
+  align-items: center;
+  background-color: hsl(100, 100%, 100%, 0.2);
+  height: 4rem;
+  border-radius: 5px;
 }
 
-.heart:before,
-.heart:after {
-  content: '';
-  background-color: var(--text);
-  border-radius: 50%;
-  height: 10px;
-  position: absolute;
-  width: 10px;
+footer {
+  background-color: #f1f1f1;
+  height: 2rem;
 }
 
-.heart:before {
-  top: -5px;
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.heart:after {
-  left: 5px;
+svg:hover path {
+  fill: red;
 }
 
-.heart.active {
-  background-color: red;
-  height: 12px;
-  transform: rotate(-45deg);
-  width: 12px;
-  position: relative;
-}
-
-.heart.active:before,
-.heart.active:after {
-  content: '';
-  background-color: red;
-  border-radius: 50%;
-  height: 12px;
-  position: absolute;
-  width: 12px;
-}
-
-.heart.active:before {
-  top: -6px;
-}
-
-.heart.active:after {
-  left: 6px;
-}
-
-.imgSearch {
-  background-image: url(/desafio1/src/img/search.svg);
-  width: 50px;
-}
-
-@media (max-width: 700px) {
-  header img {
-    left: 10%;
-  }
+svg.active {
+  fill: red;
 }
