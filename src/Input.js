@@ -1,5 +1,4 @@
 import React from 'react';
-import Search from './img/search.svg';
 
 const Input = () => {
   const search = (
