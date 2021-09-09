@@ -18,7 +18,7 @@ const Input = () => {
     <div className="">
       <div className="container-search">
         {search}
-        <input className="" />
+        <input placeholder="Pesquisar no Blog" className="" />
       </div>
     </div>
   );
