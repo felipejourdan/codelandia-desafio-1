@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './Header';
-import Main from './Main';
 import Footer from './Footer';
+import MainScroll from './MainScroll';
 
 const App = () => {
   return (
     <div className="">
       <Header className="container" />
-      <Main className="container" />
+      <MainScroll />
       <Footer />
     </div>
   );
