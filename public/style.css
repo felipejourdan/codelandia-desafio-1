@@ -144,3 +144,7 @@ svg:hover path {
 svg.active {
   fill: red;
 }
+
+.navCursor {
+  cursor: pointer;
+}
